@@ -1,5 +1,6 @@
 #ifndef _NODE_H
 #define _NODE_H
+
 class Node
 {
 public:
@@ -10,4 +11,5 @@ public:
 	Node(int key, Node * next = 0, Node * prev = 0);
 	~Node();
 };
+
 #endif

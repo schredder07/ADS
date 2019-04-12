@@ -43,11 +43,18 @@ public:
 	List & operator = (const List * _List);						// Zuweisungsoperator definieren
 	List & operator + (const List & List_Append);				// Listen zusammenführen zu einer Liste
 	List & operator + (const List * List_Append);				// Listen zusammenführen zu einer Liste
+	
 	friend std::ostream & operator << (std::ostream & stream, List const & Liste);		// Ausgabeoperator überladen
+	
 	friend std::ostream & operator << (std::ostream & stream, List const * Liste);		// Ausgabeoperator überladen
+	
+	friend std::ostream & operator << (std::ostream & stream, const List & Liste);
 	friend Node* get_anker(List& l);
 	friend int get_AnzahlNodes(List& l);
 };
+
+
+
 
 #endif
 

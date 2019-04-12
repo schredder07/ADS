@@ -19,8 +19,9 @@ int main(void)
 
 	cout << "100: " << (MyList.search(100) ? "gefunden" : "nicht gefunden") << endl;
 	cout << "99: " << (MyList.search(99) ? "gefunden" : "nicht gefunden") << endl << endl;
-
-	while (MyList.getBack(i))
+	//MyList.swap(109,10);
+	//MyList.del(10);//lösche 10
+	while(MyList.getBack(i))
 		cout << i << " ";
 	cout << endl << endl;
 
@@ -31,10 +32,14 @@ int main(void)
 		MyList1.insertFront(i + 1);
 		MyList2.insertBack(i + 100);
 	}
-
+	//MyList1.insertBack(MyList2);
+	//MyList1.insertFront(MyList2);
+	
+	
+	
 	MyList1.format("MyList1\n<<", ", ", ">>\n\n");
 	cout << MyList1;
-
+	
 	MyList_dyn->format("MyList_dyn\n<<", ", ", ">>\n\n");
 	MyList_dyn->insertFront(-111);
 	cout << MyList_dyn;
